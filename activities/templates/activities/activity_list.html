@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>社团活动</title>
+</head>
+<body>
+    <h1>社团活动</h1>
+
+    {% for activity in activities %}
+        <article>
+            <h2>{{ activity.title }}</h2>
+            <p>{{ activity.start_time }} · {{ activity.location }}</p>
+            <a href="{% url 'activities:edit' activity.pk %}">编辑</a>
+        </article>
+    {% empty %}
+        <p>暂时没有活动。</p>
+    {% endfor %}
+</body>
+</html>
