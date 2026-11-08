@@ -13,6 +13,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 python manage.py migrate
+python manage.py loaddata activities/fixtures/demo_activities.json
 python manage.py runserver
 ```
 
