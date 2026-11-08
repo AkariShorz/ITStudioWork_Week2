@@ -1,0 +1,42 @@
+[
+  {
+    "model": "activities.activity",
+    "pk": 1,
+    "fields": {
+      "title": "test",
+      "description": "test",
+      "start_time": "2026-11-09T17:48:38.616Z",
+      "location": "教学区4区4405"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 2,
+    "fields": {
+      "title": "爱特牛逼",
+      "description": "讨论本周的学习安排",
+      "start_time": "2026-11-09T18:01:16.801Z",
+      "location": "教学区4区4405"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 3,
+    "fields": {
+      "title": "程序部牛逼",
+      "description": "交流活动管理页面的改进想法",
+      "start_time": "2026-11-10T18:01:16.801Z",
+      "location": "教学区4区4405"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 4,
+    "fields": {
+      "title": "JXY牛逼",
+      "description": "整理下次活动的流程",
+      "start_time": "2026-11-11T18:01:16.801Z",
+      "location": "教学区4区4405"
+    }
+  }
+]
