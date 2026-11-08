@@ -5,11 +5,15 @@ from .models import Activity
 
 
 def activity_list(request):
+    keyword = request.GET.get("q", "").strip()
     activities = Activity.objects.order_by("start_time")
+    if keyword:
+        activities = activities.filter(title__icontains=keyword)
+
     return render(
         request,
         "activities/activity_list.html",
-        {"activities": activities},
+        {"activities": activities, "keyword": keyword},
     )
 
 

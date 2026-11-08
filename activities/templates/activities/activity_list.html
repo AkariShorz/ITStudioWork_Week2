@@ -7,6 +7,15 @@
 <body>
     <h1>社团活动</h1>
 
+    <form method="get">
+        <label for="q">按标题搜索：</label>
+        <input id="q" type="search" name="q" value="{{ keyword }}">
+        <button type="submit">搜索</button>
+        {% if keyword %}
+            <a href="{% url 'activities:list' %}">清除搜索</a>
+        {% endif %}
+    </form>
+
     {% for activity in activities %}
         <article>
             <h2>{{ activity.title }}</h2>
