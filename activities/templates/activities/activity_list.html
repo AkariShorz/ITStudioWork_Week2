@@ -12,6 +12,7 @@
             <h2>{{ activity.title }}</h2>
             <p>{{ activity.start_time }} · {{ activity.location }}</p>
             <a href="{% url 'activities:edit' activity.pk %}">编辑</a>
+            <a href="{% url 'activities:delete' activity.pk %}">删除</a>
         </article>
     {% empty %}
         <p>暂时没有活动。</p>

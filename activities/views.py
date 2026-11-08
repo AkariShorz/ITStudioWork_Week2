@@ -29,3 +29,17 @@ def activity_edit(request, pk):
         "activities/activity_form.html",
         {"form": form, "activity": activity},
     )
+
+
+def activity_delete(request, pk):
+    activity = get_object_or_404(Activity, pk=pk)
+
+    if request.method == "POST":
+        activity.delete()
+        return redirect("activities:list")
+
+    return render(
+        request,
+        "activities/activity_confirm_delete.html",
+        {"activity": activity},
+    )
