@@ -14,3 +14,12 @@ pip install -r requirements.txt
 
 python manage.py migrate
 python manage.py runserver
+```
+
+## 测试
+
+在项目根目录运行：
+
+```bash
+python manage.py test activities
+```
