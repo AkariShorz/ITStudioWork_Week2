@@ -13,7 +13,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 python manage.py migrate
-python manage.py loaddata activities/fixtures/demo_activities.json
+python manage.py loaddata activities/fixtures/demo_activities.json #写了几个数据拿来做小测试
 python manage.py runserver
 ```
 
